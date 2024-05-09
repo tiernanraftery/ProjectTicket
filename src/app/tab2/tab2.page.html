@@ -1,0 +1,28 @@
+
+<ion-header [translucent]="false">
+  <ion-toolbar>
+    <ion-title>
+     Event Details
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="false">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Event Details</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div >
+    <h1>Event Detailss</h1>
+   <ion-card *ngFor="let ticket of tickets">
+    <ion-card-header>
+      <ion-card-title>{{ticket.name}}</ion-card-title>
+  
+      <ion-card-subtitle>{{ticket.url}}</ion-card-subtitle>
+    </ion-card-header>
+
+  </ion-card>
+  </div>
+</ion-content>
